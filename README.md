@@ -1,1 +1,3 @@
-# SubReddit_Recommendation
+# Visual SubReddit Recommender
+
+Nariman Alimuradov
