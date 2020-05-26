@@ -1,1 +1,1 @@
-web: gunicorn tag_text:app
+web: gunicorn run_sub_finder:app
