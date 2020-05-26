@@ -1,3 +1,3 @@
-# Subreddit recommender
+# Subreddit Recommender
 
 Nariman Alimuradov
