@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<title>Subreddit Recommender</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+html, header, body {background-color:	#F0FFF0}
+h1 {text-align:center;}
+#main_contents: {margin-left:auto; margin-right:auto; text-align:center;}
+h4,p {text-align:center}
+form {justify-content:center}
+.center_btn {text-align:center}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+
+
+<!-- Introduction menu -->
+<div class="w3-col" id="main_contents">
+    <h1><b>Subreddit Recommender</b></h1>
+
+    <h4>Enter the name of a subreddit: </h4>
+    <p><em>Without the /r/ at the beginning...</em></p>
+    <form action="{{ url_for('display')}}" method="post">
+        <div class="center_btn">
+        <input type="text" name="similar">
+        <button type="submit" id="tag_btn" id="btn_predict" class="btn btn-primary">Enter</button>
+            </div>
+    </form>
+    <h4>Or pick one of these sample subreddits: </h4>
+    <form action="{{ url_for('display')}}" method="post">
+        <div class="center_btn">
+        <button type="submit" id="sample1" name="similar" value="cars" class="btn btn-primary">cars</button>
+        <button type="submit" id="sample2" name="similar" value="aww" class="btn btn-primary">aww</button>
+        <button type="submit" id="sample3" name="similar" value="space" class="btn btn-primary">space</button>
+        <button type="submit" id="sample4" name="similar" value="funny" class="btn btn-primary">funny</button>
+        <button type="submit" id="sample5" name="similar" value="gaming" class="btn btn-primary">gaming</button>
+        <button type="submit" id="sample6" name="similar" value="food" class="btn btn-primary">food</button>
+        </div>
+    </form>
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END w3-content -->
+</div>
+
+</body>
+</html>

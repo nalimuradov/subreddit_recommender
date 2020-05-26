@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+html, header, body {background-color:	#F0FFF0}
+#count {font-size:24px;}
+h1 {text-align:center;}
+#main_contents: {margin-left:auto; margin-right:auto;}
+h4,p {text-align:center}
+form {justify-content:center}
+.center_btn {text-align:center}
+#main_card, #main_list, #main_contents {margin:auto; justify-content:center;}
+#lower_card {margin-left:auto; margin-right:auto;}
+#link_sr {float:right;}
+#use_as_main {align-items:center;}
+button:hover {cursor: pointer; opacity: 0.9;}
+#name {margin-left: 20px;}
+
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+
+
+<!-- Introduction menu -->
+<div class="w3-col" id="main_contents">
+    <h1><b>Subreddit Recommender</b></h1>
+
+    <h4>Enter the name of a subreddit: </h4>
+    <p><em>Without the /r/ at the beginning...</em></p>
+    <form action="{{ url_for('display')}}" method="post">
+        <div class="center_btn">
+        <input type="text" name="similar">
+        <button type="submit" id="tag_btn" id="btn_predict" class="btn btn-primary">Enter</button>
+            </div>
+    </form>
+
+  <!-- Posts -->
+  <div class="w3-card w3-margin" id="lower_card">
+    <div class="w3-container w3-padding"  id="main_card">
+        <h4>If you like {{subname}}, you may also enjoy...</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white"  id="main_list">
+        {% for name, count in pairs %}
+      <li class="w3-padding-16">
+            <span title="similarity score" id="count">{{count}}%</span>
+          <span id="name" class="w3-large">{{name}}</span>
+          <button id="link_sr" onclick="window.open('https://www.reddit.com/r/{{name}}');">Visit /r/{{name}}</button>
+
+      </li>
+        {% endfor %}
+    </ul>
+  </div>
+
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END w3-content -->
+</div>
+
+</body>
+</html>
