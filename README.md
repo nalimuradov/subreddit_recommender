@@ -10,9 +10,9 @@ My subreddit recommender allows a user to select a subreddit and see which other
 
 Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
 
-> For example, if many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
+> If many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
 
-A higher **recommendation score** means there is a much higher overlap when compared to the average. On the other hand, a 0% score means that there is an average amount of overlap and therefore no correlation.
+A higher **recommendation score** means there is a much higher user overlap when compared to the average. On the other hand, a 0% score means that there is an expected amount of user overlap and therefore no correlation.
 
 A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/Askreddit** are so popular that they are constantly recommended, but if we track their distribution, we can adjust their impact on the rankings accordingly.
 
