@@ -14,5 +14,6 @@ Recommended subreddits are determined by tracking the liked posts of active user
 
 A higher **recommendation score** means there is a much higher overlap when compared to the average. On the other hand, a 0% score means that there is an average amount of overlap and therefore no correlation.
 
-A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/Askreddit** are so popular that they are constantly recommended, but if we track how the subreddits are distributed, we can adjust their impact on the rankings accordingly.
+A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/Askreddit** are so popular that they are constantly recommended, but if we track their distribution, we can adjust their impact on the rankings accordingly.
+
 
