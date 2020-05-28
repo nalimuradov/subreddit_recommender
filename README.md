@@ -4,7 +4,7 @@ Try it at: http://similar-subreddits.herokuapp.com/
 
 Reddit is a website with communities called **subreddits**, where users may discuss topics they share interest in, such as cooking or art.
 
-My application allows a user to select a subreddit and see which other subreddits are likely to pique your interest.
+My subreddit recommender allows a user to select a subreddit and see which other subreddits are likely to pique their interest.
 
 ![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gaming subreddit recommendations")
 
