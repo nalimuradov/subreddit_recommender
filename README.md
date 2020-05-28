@@ -6,7 +6,7 @@ Reddit is a website with communities called **subreddits**, where users may disc
 
 My application allows a user to select a subreddit and see which other subreddits are likely to pique your interest.
 
-![alt text](https://github.com/nalimuradov/Video-View-Predictor/blob/master/images/img5.png "Sample data for a video")
+![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gaming subreddit recommendations")
 
 Recomomended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping subreddits.
 
