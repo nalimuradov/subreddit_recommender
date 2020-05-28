@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>Subreddit Recommender</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="shorcut icon" href="/static/rdt.png" />
 <style>
 body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 html, header, body {background-color:	#F0FFF0}
@@ -33,7 +34,7 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- Introduction menu -->
 <div class="w3-col" id="main_contents">
     <h1><b>Subreddit Recommender</b></h1>
-
+    <p><button id="gh" onclick="window.open('https://github.com/nalimuradov/Subreddit_Recommender')"><img src="static/gh.png" height="25px"></button></p>
     <h4>Enter the name of a subreddit: </h4>
     <p><em>Without the /r/ at the beginning...</em></p>
     <form action="{{ url_for('display')}}" method="post">
@@ -46,12 +47,12 @@ and is wrapped around the whole page content, except for the footer in this exam
   <!-- Posts -->
   <div class="w3-card w3-margin" id="lower_card">
     <div class="w3-container w3-padding"  id="main_card">
-        <h4>If you like {{subname}}, you may also enjoy...</h4>
+        <h4>{{subname}}</h4>
     </div>
     <ul class="w3-ul w3-hoverable w3-white"  id="main_list">
         {% for name, count in pairs %}
       <li class="w3-padding-16">
-            <span title="similarity score" id="count">{{count}}%</span>
+            <span title="recommendation score" id="count">{{count}}%</span>
           <span id="name" class="w3-large">{{name}}</span>
           <button id="link_sr" onclick="window.open('https://www.reddit.com/r/{{name}}');">Visit /r/{{name}}</button>
 
