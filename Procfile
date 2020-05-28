@@ -1,1 +1,1 @@
-web: gunicorn run_sub_finder:app
+web: gunicorn run_sub_finder:app --preload --max-requests 1200
