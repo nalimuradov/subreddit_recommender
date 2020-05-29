@@ -16,6 +16,6 @@ The **recommendation score** on the left signifies the amount of user overlap. T
 
 > If many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
 
-A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/AskReddit** are so popular that they are constantly recommended but if we track their distribution, we can adjust their impact on the rankings accordingly.
+A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/AskReddit** are so popular that they are constantly recommendedn, but we can track their subreddit distribution and adjust their impact on the rankings accordingly.
 
 
