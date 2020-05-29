@@ -2,17 +2,17 @@
 
 Try it at: http://similar-subreddits.herokuapp.com/
 
-Reddit is a website with communities called **subreddits**, where users may discuss topics they share interest in, such as cooking or art.
+Reddit is a site of communities called **subreddits** where users may discuss topics they share interest in, such as cooking or art.
 
-My subreddit recommender allows a user to select a subreddit and see which other subreddits are likely to pique their interest.
+My *Subreddit Recommender* allows a user to select a subreddit and see which other subreddits are likely to pique their interest. Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
 
-![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gaming subreddit recommendations")
+![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gardening subreddit recommendations")
 
-Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
+> Above are some recommended subreddits for /r/gardening. It's interesting to note that many users who like /r/gardening also like /r/cats.
+
+The **recommendation score** on the left signifies the amount of user overlap. The greater the value, the more above-average overlap there is in activity. 
 
 > If many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
-
-A higher **recommendation score** means there is a much higher user overlap when compared to the average. On the other hand, a 0% score means that there is an expected amount of user overlap and therefore no correlation.
 
 A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/Askreddit** are so popular that they are constantly recommended, but if we track their distribution, we can adjust their impact on the rankings accordingly.
 
