@@ -6,7 +6,7 @@ Reddit is a site of communities called **subreddits** where users may discuss to
 
 My *Subreddit Recommender* allows a user to select a subreddit and find other communities that are likely to pique their interest. 
 
-Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
+Recommended subreddits are determined by tracking the **liked posts of active users** on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
 
 ![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gardening subreddit recommendations")
 
@@ -16,6 +16,6 @@ The **recommendation score** on the left signifies the amount of user overlap. T
 
 > If many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
 
-A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/Askreddit** are so popular that they are constantly recommended, but if we track their distribution, we can adjust their impact on the rankings accordingly.
+A *tf-idf* inspired statistic is used to drown out the extremely popular subreddits. Some subreddits such as **/r/AskReddit** are so popular that they are constantly recommended but if we track their distribution, we can adjust their impact on the rankings accordingly.
 
 
