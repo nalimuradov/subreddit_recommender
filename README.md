@@ -4,7 +4,9 @@ Try it at: http://similar-subreddits.herokuapp.com/
 
 Reddit is a site of communities called **subreddits** where users may discuss topics they share interest in, such as cooking or art.
 
-My *Subreddit Recommender* allows a user to select a subreddit and see which other subreddits are likely to pique their interest. Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
+My *Subreddit Recommender* allows a user to select a subreddit and find other communities that are likely to pique their interest. 
+
+Recommended subreddits are determined by tracking the liked posts of active users on Reddit, and creating maps of overlapping likes and their corresponding subreddits.
 
 ![alt text](https://github.com/nalimuradov/Subreddit_Recommender/blob/master/static/rdt_rcmnd.png "gardening subreddit recommendations")
 
