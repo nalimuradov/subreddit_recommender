@@ -15,7 +15,7 @@ h4,p {text-align:center}
 form {justify-content:center}
 .center_btn {text-align:center}
 #main_card, #main_list, #main_contents {margin:auto; justify-content:center;}
-#lower_card {margin-left:auto; margin-right:auto;}
+#lower_card {margin-left:auto; margin-right:auto; min-width: 500px;}
 #link_sr {float:right;}
 #use_as_main {align-items:center;}
 button:hover {cursor: pointer; opacity: 0.9;}
@@ -27,13 +27,8 @@ html, header, body {
 </style>
 <body class="w3-light-grey">
 
-<!-- w3-content defines a container for fixed size centered content,
-and is wrapped around the whole page content, except for the footer in this example -->
 <div class="w3-content" style="max-width:1400px">
 
-
-
-<!-- Introduction menu -->
 <div class="w3-col" id="main_contents">
     <h1><b>Subreddit Recommender</b></h1>
     <p><button id="gh" onclick="window.open('https://github.com/nalimuradov/Subreddit_Recommender')"><img src="static/gh.png" height="25px"></button></p>
@@ -46,7 +41,6 @@ and is wrapped around the whole page content, except for the footer in this exam
             </div>
     </form>
 
-  <!-- Posts -->
   <div class="w3-card w3-margin" id="lower_card">
     <div class="w3-container w3-padding"  id="main_card">
         <h4>{{subname}}</h4>
@@ -57,17 +51,12 @@ and is wrapped around the whole page content, except for the footer in this exam
             <span title="recommendation score" id="count">{{count}}%</span>
           <span id="name" class="w3-large">{{name}}</span>
           <button id="link_sr" onclick="window.open('https://www.reddit.com/r/{{name}}');">Visit /r/{{name}}</button>
-
       </li>
         {% endfor %}
     </ul>
   </div>
-
-
-<!-- END Introduction Menu -->
 </div>
 
-<!-- END w3-content -->
 </div>
 
 </body>
