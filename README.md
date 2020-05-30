@@ -12,7 +12,7 @@ Recommended subreddits are determined by tracking the **liked posts of active us
 
 > Above are some recommended subreddits for /r/gardening. It's interesting to note that many users who like /r/gardening also like /r/cats.
 
-The **recommendation score** on the left signifies the amount of user overlap. The greater the value, the more above-average overlap there is in activity. 
+The **recommendation score** on the left signifies the amount of user overlap. The greater the value, the greater the overlap in activity.
 
 > If many users who like posts in /r/cars also like posts in /r/gaming, their recommendation scores will be higher.
 
