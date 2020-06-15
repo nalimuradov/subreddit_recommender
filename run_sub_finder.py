@@ -8,7 +8,7 @@ import math
 app = Flask(__name__)
 
 
-# final step: return most similar subs given the subname as input
+# return most similar subs given the subname as input
 def get_most_similar_subs(subname):
     relevant = {}
     x = data.final_dict.pairs
@@ -81,11 +81,13 @@ def get_most_similar_subs(subname):
     return names, counts
 
 
+# default route
 @app.route('/')
 def home():
     return render_template('base.html')
 
 
+# route on submit
 @app.route('/home', methods=['POST'])
 def display():
     subname = request.form.get("similar")
