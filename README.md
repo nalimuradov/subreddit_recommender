@@ -1,6 +1,6 @@
 # Subreddit Recommender
 
-Try it at: https://similar-subreddits.herokuapp.com/
+Try it at: https://subreddits.nalimuradov.com
 
 Reddit is a site of communities called **subreddits** where users may discuss topics they share interest in, such as cooking or art.
 
